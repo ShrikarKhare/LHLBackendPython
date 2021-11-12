@@ -7,7 +7,7 @@ function Randominteger(min, max){
   max = Math.floor(max);
   return Math.floor(Math.random()*(max-min+1)+min);
 }
-//function to handle dice roll depending on the number of dice.
+//function to handle dice roll depending on the number of dice. ceil and floor are used to prevent decimal values
 function diceRoll(numDice){
   const result =[];
   for(let i = 0; i < numDice; i++){
