@@ -1,0 +1,15 @@
+{
+  "name": "w3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rockPaperScisscors.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  }
+}
