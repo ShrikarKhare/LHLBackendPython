@@ -21,12 +21,12 @@ raisinAlarm(['chocolate', 'raisin', 'chocolate', 'chocolate',]);
 raisinAlarm([]);*/
 // Code with emojis //
 const raisinAlarm = (cookie) => {
-    if (cookie.find(x => x === '🍇')) {
-        console.log("Raisin alert!");
-    } else {
-        console.log('All good!');
-    }
-}
+  if (cookie.find(x => x === '🍇')) {
+    console.log("Raisin alert!");
+  } else {
+    console.log('All good!');
+  }
+};
 raisinAlarm(['🍫', '🍇', '🍫', '🍫',]);
 raisinAlarm(['🍫', '🍫', '🍫', '🍫',]);
 raisinAlarm(['🍫', '🍇', '🍫', '🍫',]);

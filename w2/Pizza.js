@@ -1,25 +1,25 @@
 class Pizza {
-    constructor (size, crust) {
-        this.size = size;
-        this.crust = crust;
-        this.toppings = ['Cheese'];
+  constructor(size, crust) {
+    this.size = size;
+    this.crust = crust;
+    this.toppings = ['Cheese'];
+  }
+  get price() {
+    const basePrice = 10;
+    const toppingPrice = 2;
+    return basePrice + (this.toppings.length * toppingPrice);
+  }
+  addTopping(topping) {
+    this.toppings.push(topping);
+  }
+  set size(size) {
+    if (size === 's' || size === 'm' || size === 'l') {
+      this._size = size;
     }
-    get price() {
-        const basePrice = 10;
-        const toppingPrice = 2;
-        return basePrice + (this.toppings.length * toppingPrice);
-    }
-    addTopping(topping) {
-        this.toppings.push(topping);
-    }
-    set size(size) {
-        if(size === 's' || size === 'm' || size === 'l'){
-            this._size = size;
-        }
-    }
-    getSize(size) {
-        return this.size;
-    }
+  }
+  getSize(size) {
+    return this.size;
+  }
 }
 //DRIVER CODE
 
